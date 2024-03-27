@@ -15,11 +15,11 @@ app = FastAPI(title="pruve - API", docs_url="/pruve/docs", openapi_url="/pruve/o
 
 #uvicorn main:app --reload
 # PostgreSQL database configuration
-DB_HOST = "db-postgresql-sfo3-smartbot-1db-do-user-8157534-0.b.db.ondigitalocean.com"
-DB_PORT = "25060"
-DB_NAME = "alpha"
-DB_USER = "doadmin"
-DB_PASSWORD = "mq2i4pwpvlen6mho"
+DB_HOST = "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+DB_PORT = "XXXXXXX"
+DB_NAME = "XXXXXX"
+DB_USER = "XXXXXX"
+DB_PASSWORD = "XXXXXXXXXXXXXX"
 DB_URI = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 conn = psycopg2.connect(DB_URI)
 cur = conn.cursor()
